@@ -3,6 +3,8 @@ import 'package:dots_indicator/dots_indicator.dart';
 import '../constants.dart';
 
 class OnBoarding extends StatefulWidget {
+  static String id = 'onboarding_screen';
+
   @override
   _OnBoardingState createState() => _OnBoardingState();
 }
@@ -52,7 +54,9 @@ class _OnBoardingState extends State<OnBoarding> {
               controller: _controller,
               children: _pages,
               onPageChanged: (index) {
-                _currentIndex = index;
+                setState(() {
+                  _currentIndex = index;
+                });
               },
             ),
           ),

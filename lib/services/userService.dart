@@ -14,7 +14,7 @@ class UserService {
     await _firestore.collection('users').doc(id).update(values);
   }
 
-  Future<void> fetchUser(String id) async {
+  Future<dynamic> fetchUser(String id) async {
     await _firestore.collection('users').doc(id).get().then((doc) {
       if (doc.data() == null) {
         return null;

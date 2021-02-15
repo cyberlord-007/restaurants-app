@@ -3,6 +3,11 @@ import 'package:flutter/material.dart';
 const kOnboardingTextStyle =
     TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
 
+const kAPIKEY = 'AIzaSyBjSiK1Y8ngeH2wQhkZ8QNucplbvGk6Fyg';
+
+const kNearByCardText =
+    TextStyle(color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold);
+
 InputDecoration TextFieldDecoration(
     String hintText, String labelText, IconData iconType) {
   return InputDecoration(

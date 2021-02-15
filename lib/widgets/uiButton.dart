@@ -8,6 +8,7 @@ Material uiButton(double elevation, double minHeight, double minWidth,
     shadowColor: Colors.black45,
     borderRadius: BorderRadius.circular(radius),
     child: MaterialButton(
+      onPressed: setData,
       minWidth: minWidth,
       height: minHeight,
       child: Text(buttonText, style: TextStyle(color: Colors.white)),
